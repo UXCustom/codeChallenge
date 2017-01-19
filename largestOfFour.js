@@ -40,3 +40,12 @@ function largestNumber(str) {
   }
   return arrResult;
 }
+
+// Solution D
+function largestOfFour(arr) {
+  var out = [];
+  for (var i = 0, j = arr.length; i < j; i++) {
+      out[i] = Math.max.apply(null, arr[i]);
+  }
+  return out;
+}
